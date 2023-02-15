@@ -16,9 +16,6 @@ import javax.servlet.http.HttpSession;
  * <p>
  * 前端控制器
  * </p>
- *
- * @author 虎哥
- * @since 2021-12-22
  */
 @Slf4j
 @RestController
@@ -32,7 +29,9 @@ public class UserController {
     private IUserInfoService userInfoService;
 
     /**
-     * 发送手机验证码
+     * 发送手机验证码<br>
+     * 请求网址: http://localhost:8080/api/user/code?phone=18888888888<br>
+     * 请求方法: POST<br>
      */
     @PostMapping("code")
     public Result sendCode(@RequestParam("phone") String phone, HttpSession session) {
