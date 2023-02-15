@@ -1,5 +1,7 @@
 package com.hmdp.utils;
 
+import com.sun.org.apache.bcel.internal.classfile.Code;
+
 public class RedisConstants {
     public static final String LOGIN_CODE_KEY = "login:code:";
     public static final Long LOGIN_CODE_TTL = 2L;
@@ -19,4 +21,12 @@ public class RedisConstants {
     public static final String FEED_KEY = "feed:";
     public static final String SHOP_GEO_KEY = "shop:geo:";
     public static final String USER_SIGN_KEY = "sign:";
+
+    //设置验证码
+    public static final String Verification_Code ="verification:code";
+
+    //设置用户
+    public static final String Login_User="login:user";
+
+
 }
